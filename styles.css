@@ -1,0 +1,74 @@
+body {
+    font-family: Courier, monospace;
+    margin: 0;
+    padding: 0;
+    background-color: #111111; /* Solid black background */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: #fff; /* White text color for better contrast */
+}
+
+header {
+    max-width: 75%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #111111;
+    font-family: Courier, monospace;
+}
+
+.text {
+    padding: 20px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+    flex: 1; /* Take remaining vertical space */
+}
+
+.image {
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #111111;
+    font-family: Courier, monospace;
+}
+
+a {
+    color: red; /* Red color for links */
+    text-decoration: none; /* Remove underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.download-btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: transparent; /* Transparent background */
+    color: red; /* Red text color */
+    text-decoration: none; /* Remove underline */
+    border: 1px solid red; /* Red border */
+    border-radius: 5px; /* Rounded corners */
+    font-family: Courier, monospace; /* Ensure font consistency */
+}
